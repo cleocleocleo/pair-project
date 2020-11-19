@@ -1,0 +1,53 @@
+@use './partials/typography' as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'AvenirNext LT Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+*:any-link {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+// GLOBAL STYLES -- TEXT
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.375rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
