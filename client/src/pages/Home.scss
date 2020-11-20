@@ -1,0 +1,100 @@
+.home{
+    justify-content: center;
+    position: relative;
+
+    &__description{
+        padding: 0;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem 0;
+        line-height: 3rem;
+    }
+
+    &__img-container{
+        display: flex;
+        width: 77rem;
+        justify-content: space-around;
+        margin: 2rem auto 0 auto;
+    }
+
+    &__img{
+        width: 25rem;
+        height: 30rem;
+        object-fit: fill;
+        transform: scale(1);
+        transition: 1s;
+    }
+
+    &__card{
+        margin: 0.187rem;
+        width: 25rem;
+        position: relative;
+        overflow: hidden;
+        line-height: 0;
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+    }
+        
+    &__card:hover .home__text-wrapper {
+            transform: translateY(0);
+        }
+    &__card:hover .home__text-wrapper-dog {
+            transform: translateY(0);
+        }
+    &__card:hover .home__text-wrapper-fox {
+            transform: translateY(0);
+        }
+    
+    &__card:hover .home__img {
+            transform: scale(1.2);
+        }    
+
+    &__text-wrapper{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: lightgreen;
+        padding: 1rem;
+        transform: translateY(100%);
+        transition: 0.5s;
+    }
+    &__text-wrapper-dog{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: lightpink;
+        padding: 1rem;
+        transform: translateY(100%);
+        transition: 0.5s;
+    }
+    &__text-wrapper-fox{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: lightskyblue;
+        padding: 1rem;
+        transform: translateY(100%);
+        transition: 0.5s;
+    }
+
+    &__wrapper-title{
+        margin: 0.625rem 0;
+        color: black;
+    }
+
+}
+
+.paw-print1{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    z-index: -1;  
+    transform: rotate(15deg);
+}
+.paw-print2{
+    position: absolute;
+    bottom: -5rem;
+    right: 2rem;
+    z-index: -1;  
+    transform: rotate(10deg);
+}
