@@ -37,7 +37,7 @@ class Cats extends Component {
         return (
             <div className="cats">
                 <Link to="/cats" >
-                    <AnotherOne onClick={this.handleRefresh} />
+                    <AnotherOne />
                 </Link>
                 <div className="cats__flex-container">
                     {this.state.catImage &&
