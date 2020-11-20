@@ -1,0 +1,26 @@
+.go-back {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 8rem;
+    bottom: 1rem;
+    right:1rem;
+
+    &__container {
+        position: relative;
+    }
+
+    &__image {
+        width: 8rem;
+    }
+
+    &__text {
+        position: fixed;
+        color: white;
+        margin: 0;
+        bottom: 2.2rem;
+        right: 3.25rem;
+    }
+}
