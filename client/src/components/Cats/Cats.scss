@@ -1,0 +1,31 @@
+.cats {
+    position: relative;
+    
+    &__flex-container {
+        display: flex;
+        width: 100%;
+        padding: 2rem;
+        object-fit: contain;
+    }
+
+    &__header {
+        margin: 0;
+    }
+    
+    &__description {
+        width: 30vw;
+        margin: 0 0 1rem;
+    }
+
+    &__image-container {
+        width: 60%;
+        height: 70vh;
+        overflow: hidden;
+        margin-right: 1.5rem;
+        flex-grow: 2;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
