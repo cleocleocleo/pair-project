@@ -6,21 +6,20 @@
         padding: 0;
         text-align: center;
         font-size: 2rem;
-        margin: 1rem 0;
+        margin: 1rem 0 4rem;
         line-height: 3rem;
     }
 
     &__img-container{
         display: flex;
-        width: 77rem;
-        justify-content: space-around;
+        width: 90%;
+        justify-content: space-evenly;
         margin: 2rem auto 0 auto;
     }
 
     &__img{
-        width: 25rem;
-        height: 30rem;
-        object-fit: fill;
+        height: 40rem;
+        object-fit: contain;
         transform: scale(1);
         transition: 1s;
     }
@@ -28,11 +27,13 @@
     &__card{
         margin: 0.187rem;
         width: 25rem;
+        height: 35rem;
         position: relative;
         overflow: hidden;
         line-height: 0;
         background: rgba(0, 0, 0, 0.3);
         box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
     }
         
     &__card:hover .home__text-wrapper {
